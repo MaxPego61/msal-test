@@ -46,9 +46,27 @@ npm run dev								this run the web server at http://localhost:5173/
 to EDIT
 code D:\OneDrive\SW\MyPhotoGallery
 
-to GIT commit
+****   GitHub
+GIT - Collega il progetto locale al nuovo repo
+git init
+git add .
+git commit -m "Initial commit"
+git branch -M main
+git remote add origin https://github.com/MaxPego61/msal-test.git
+git push -u origin main
+
+
+GIT commit
 cd D:\OneDrive\SW\MyPhotoGallery
 git add .
 git commit -m "commento"
 git push
+
+git add . ; git commit -m "Update 1.0" ; git push
+
+PER TORNARE INDIETRO
+git log --oneline
+git reset --hard a1b2c3d
+git push --force
+
 
