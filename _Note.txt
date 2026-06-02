@@ -1,0 +1,54 @@
+Sviluppato con CLAUDE
+
+- installare Node.js  https://nodejs.org/en/download
+- installare Visual Studio Code  https://code.visualstudio.com/
+
+Registrazione in Azure Privat    https://azure.microsoft.com/it-it/free/
+
+Registrare una app in AZURE  - App registrations
+https://portal.azure.com/#view/Microsoft_AAD_RegisteredApps/ApplicationsListBlade
+
+Display name: 							MyPhotoGallery
+Application (client) ID: 		ea4407ab-4f7b-4f7c-b702-13a6f5886134
+
+il progetto girerà su Vercel.com
+https://vercel.com/
+Login via GitHub con URL name: maxpego
+
+
+Devo usare un folder diretto e non un linked
+cd D:\OneDrive\SW\MyPhotoGallery
+cd D:\OneDrive\SW\msal-test
+
+
+
+CREARE il PROGETTO
+cd D:\OneDrive\SW\
+npm create vite@latest MyPhotoGallery -- --template react-ts
+cd MyPhotoGallery
+
+npm install @azure/msal-react @azure/msal-browser react-photo-album@2 @tanstack/react-virtual
+npm install -D @types/node
+
+*** Poi si lavora sempre dal folder del progetto
+cd D:\OneDrive\SW\MyPhotoGallery
+
+
+TO COMPILE   -- (dopo la compilazione copiare il folder \dist\*  in root
+npm run build
+xcopy /E /Y D:\OneDrive\SW\MyPhotoGallery\dist\* D:\OneDrive\SW\MyPhotoGallery\MyPhotoGallery\
+
+
+TO RUN
+cd D:\OneDrive\SW\MyPhotoGallery
+npm run dev								this run the web server at http://localhost:5173/
+
+to EDIT
+code D:\OneDrive\SW\MyPhotoGallery
+
+to GIT commit
+cd D:\OneDrive\SW\MyPhotoGallery
+git add .
+git commit -m "commento"
+git push
+
