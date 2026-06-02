@@ -6,7 +6,7 @@ function App() {
   const isAuthenticated = useIsAuthenticated();
 
   const login = () => {
-    instance.loginPopup(loginRequest);
+    instance.loginRedirect(loginRequest);
   };
 
   const logout = () => {
