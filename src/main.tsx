@@ -7,7 +7,7 @@ import { msalConfig } from "./msalConfig";
 
 const msalInstance = new PublicClientApplication(msalConfig);
 
-// 🔥 Gestisce il redirect dopo il login
+// 🔥 Aspetta che MSAL gestisca il redirect PRIMA di renderizzare React
 msalInstance.handleRedirectPromise().then(() => {
   ReactDOM.createRoot(document.getElementById("root")!).render(
     <React.StrictMode>
